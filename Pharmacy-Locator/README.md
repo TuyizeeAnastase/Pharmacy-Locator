@@ -1,1 +1,1 @@
-# Skeleton project for Swagger
+# Connect Pharmacy with Patient
