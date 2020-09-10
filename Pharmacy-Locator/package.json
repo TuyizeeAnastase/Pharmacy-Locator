@@ -9,14 +9,18 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.12.3",
+    "jest": "^26.4.2",
+    "pretest": "^1.1.0",
     "swagger-express-mw": "^0.1.0"
   },
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "should": "^7.1.0",
     "supertest": "^1.0.0"
   },
   "scripts": {
     "start": "node app.js",
-    "test": "swagger project test"
+    "test": "swagger project test",
+    "coverage": "npm run test && jest --coverage && cat ./coverage/lcov.info | coveralls"
   }
 }
